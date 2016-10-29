@@ -279,8 +279,9 @@ void SetQdirFromPath( const char *path )
 						strcpy( writedir, gamedir );
 					else if ( writedir[strlen( writedir )-1] != '/' )
 					{
-						writedir[strlen( writedir )] = '/';
-						writedir[strlen( writedir )] = 0;
+						len = strlen( writedir );
+						writedir[len] = '/';
+						writedir[len+1] = 0;
 					}
 
 					return;
