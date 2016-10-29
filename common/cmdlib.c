@@ -280,7 +280,7 @@ void SetQdirFromPath( const char *path )
 					else if ( writedir[strlen( writedir )-1] != '/' )
 					{
 						writedir[strlen( writedir )] = '/';
-						writedir[strlen( writedir )+1] = 0;
+						writedir[strlen( writedir )] = 0;
 					}
 
 					return;
